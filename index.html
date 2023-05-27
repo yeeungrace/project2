@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> 10분만 잘게요.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/28ee82befc.js" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	html{font-family: 'Noto Sans KR', sans-serif;}
+	body,h1,h2,p{margin: 0px; padding: 0px;}
+	header{display: flex; justify-content: space-between; align-items: center; padding: 30px 10%;background-color: #F8F1DF}
+	body{background: black}
+	img{display: block; width:100%;}
+	.wrapper{width:1000px; margin: auto; text-align: center;}
+		li{list-style-type: none;}
+		.menu{display: flex; padding: 0px 20px; justify-content: space-evenly;}
+		.logo{display:block;width: 10%;height: auto;}
+		a{text-decoration: none; transition: all 0.3s ease 0s; border-style: solid; color:#ef1718; font-size: 1rem; border-radius: 20px; padding:3px 15px; margin: 0px 20px}
+		a:hover{background:#ef1718; color: white;}
+		.sticky{position: sticky;}
+		div{text-align: center; margin:auto;}
+		footer{padding: 200px 0px 100px 0px; color: white;}
+
+/***main-page***/
+
+	.bg-main{background: #F8F1DF;}
+	.main-page{padding: 0px 10% 65px 10%;}
+	.title{padding: 0px 0px 0px 300px; width: auto;}
+	.cat-red{margin: 0px; padding:0px ;width: 100%;}
+
+/**first section**/
+
+	.centered{width: 1000px; text-align: center; margin: auto;}
+	.first{width:1000px; align-content: center; margin: auto; padding: 20px;}
+	.bg-gradient{position: absolute; width: 100%; height: 750px;background: radial-gradient(50% 50% at 50% 50%, #E5C7EA 8.85%, #B5D8BA 22.4%, #FFE86F 48.96%, rgba(255, 185, 185, 0.811875) 78.12%, #F8F1DF 100%);z-index: -1; background-attachment: fixed;background-position: center}
+	.bold{font-weight: 700; font-size: 4rem; }
+	.red-box{border-style: solid; color:#ef1718; background-color: white;padding:5px 10px;}
+	.지금당신{position: absolute; width: 300px; text-align: center; top: 160px}
+	.피곤한가요{position: absolute; width: 380px; text-align: center; right: 20%; top: 450px;}
+	.sm-size{width:50%;}
+	.img01{position: relative ;padding: 50px; z-index: -1}
+	.bg-black{position: relative; height:2000px;top:750px; background: black; z-index: -1}
+	.하지만{font-size: 1.5rem;}
+	.no-padding{padding: 0;}
+
+/***situation-onwards***/
+
+	.text-deco{font-weight: 100; letter-spacing: 1rem; font-size: 15px; color: white;}
+	.adjust{position: relative; margin-top: 40px;}
+	.top-a{top: 200px;}
+	.top-a div{padding-top: 10px}
+		.mid-em{font-weight: 700; font-size: 2rem;}
+		.txt{font-weight: 500; font-size: 22px;}
+	.img-flex{padding:30px;
+			width: 900px;
+			display:flex;
+			flex-wrap: wrap; align-items: center;justify-content: center;}
+		.img-flex img{width: 200px;display: block;}
+		.white{color: white;}
+		.top-a div{position:relative ;top: 50px;}
+		.top-a p{position: relative; margin: 20px 0px 0px 0px}
+		.mid-em{font-weight: 700; font-size: 2rem; text-align: center}
+		.txt{font-weight: 500;}
+		.bg-none{background: none;}
+		.bg-exper{background: url(bg-exper.png); background:cover; position: relative; top: 230px; z-index: -1}
+		.wrapper3{width: 1000px; padding: 200px 0px;text-align: center ;margin: auto;}
+		.wrapper3 p{font-size: 1.5rem;}
+		h3{font-size:4rem}
+
+		h4{font-size: 2rem; font-weight: 700; margin:0}
+
+
+		.text-purple{color: #D7D0FC;}
+		.text-green{color:#ABBC5C;}
+		.text-pink{color:#F669AE;}
+		.purple-box {border-style: solid; border-color:#D7D0FC;background-color: none;}
+		.green-box{border-style: solid; border-color:#ABBC5C;background-color: none;}
+		.pink-box{border-style: solid; border-color: #F669AE;background-color: none;}
+		.purple-box, .pink-box, .green-box{border-width: 1px; height: 270px}
+		
+		.purple-filled {background-color: #D7D0FC;}
+		.green-filled {background-color: #ABBC5C;}
+		.pink-filled {background-color: #F669AE;}
+		.purple-filled, .pink-filled, .green-filled{height: 300px}
+
+	.container {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  height: 100vh;
+	  width: 100vw;}
+
+	h2 {
+	  color: black;
+	  font-size: 3rem;
+	  font-weight: 300;
+	  line-height: 1.5;
+	  text-transform: uppercase;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  position: relative;
+	  width: 600px;}
+
+	h2 span {
+	  font-size: 40px;
+	  margin-left: 40px;
+	}
+
+
+
+	.message {
+	  background-color: #D7D0FC;
+	  display: block;
+	  font-weight: 700;
+	  overflow: hidden;
+	  position: absolute;
+	  padding-left: 0.5rem;
+	  top: 0.2rem;
+	  left: 270px;
+	  animation: openclose 5s ease-in-out infinite;
+	}
+
+
+		@keyframes openclose {
+		  0% {
+		    top: 0.2rem;
+		    width: 0;
+		  }
+		  5% {
+		    width: 0;
+		  }
+		  15% {background-color: #ABBC5C;
+		    width: 310px;
+		  }
+		  30% {
+		    top: 0.2rem;
+		    width: 310px;
+		  }
+		  33% {
+		    top: 0.2rem;
+		    width: 0;
+		  }
+		  35% {
+		    top: 0.2rem;
+		    width: 0;
+		  }
+		  38% {
+		    top: -4.5rem;
+		    
+		  }
+		  48% {
+		    top: -4.5rem;
+		    width: 310px;
+		  }
+		  62% {background-color: #F669AE;
+		    top: -4.5rem;
+		    width: 310px;
+		  }
+		  66% {
+		    top: -4.5rem;
+		    width: 0;
+		    text-indent: 0;
+		  }
+		  71% {
+		    top: -9rem;
+		    width: 0;
+		    text-indent: 5px;
+		  }
+		  86% {
+		    top: -9rem;
+		    width: 310px;
+		  }
+		  95% {
+		    top: -9rem;
+		    width: 310px;
+		  }
+		  98% {
+		    top: -9rem;
+		    width: 0;
+		    text-indent: 5px;
+		  }
+		  100% {
+		    top: 0;
+		    width: 0;
+		    text-indent: 0;
+		  }
+	}
+
+
+/**finding2**/
+
+.dot{
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;}
+.column-3 p,h4{padding-top: 20px;}
+.column-3 p{font-size: 18px; font-weight: 200;}
+.bg-hand{background-image: url(bg-hand.png);
+  background-attachment: fixed;
+ background-size: 100% 100%}
+
+.melatonin, .menthol{width: 100%; height: 100%; object-fit: contain;}
+.btm-plc{vertical-align: text-bottom;}
+.first-col, .second-col{text-size: 16pt; font-weight: 300;}
+.last-col{vertical-align: bottom;}
+.last-col p{text-size: 16pt; font-weight: 300;}
+.last-col h4{text-size: 33pt; font-weight: 300;}
+.last-col em{text-decoration: none; font-size: 33pt; font-weight: 700;}
+.udl-wavy{text-decoration-line: underline;
+  text-decoration-style: wavy; color:white;}
+
+.t-left {text-align:left}
+.t-center{text-align: center}
+.t-right{text-align: right}
+.brain{margin-top: 50px;}
+.brain h4{font-size: 4rem;}
+.brain p{padding-top: 20px;}
+.citation{padding: 10px;}
+.buy{padding: 10px 30px; overflow: auto;}
+.buy img{position: relative; margin-top: 20px; align-content: bottom;}
+.sleepy1{display: block; width: 50px;}
+.product h3{text-size: 3.5rem; margin-top: 300px;}
+.buy em{text-emphasis-style: none; font-weight: 700; font-size: 2.5em;}
+.buy p{}
+
+
+
+.cautions{width: 500px;margin-top: 250px; padding: 50px; text-align: center;}
+.cautions p{font-size:1.5em; font-weight:300 ;line-height: 1.5;}
+.cautions h4{border-style: solid; width:200px;border-color: red; margin: auto; padding-bottom: 20px; margin-bottom: 40px}
+.button {margin: 30px 80px; height:auto; padding: 5px;}
+</style>
+</head>
+
+
+<body>
+	<header>
+			<img class="logo" src="logo.png">
+	    <nav>
+			<ul class="menu">
+				<li><a href="#situation">SITUATION</a></li>
+				<li><a href="#findings">FINDINGS</a></li>
+				<li><a href="#product">PRODUCT</a></li>
+				<li><a href="#cautions">CAUTIONS</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="bg-main">
+			<div class="main-page">
+			<img class="title" src="title.svg">
+			</div>
+		<img class="cat-red" src="cat-red.png">
+	</section>
+
+<section class="bg-gradient", id="situation">
+	<div class="wrapper">
+		<p class="bold red-box 지금당신">지금 당신,</p>	
+		<img class="sm-size img02" src="img02.png">
+	</div>
+	<div>
+		<p class="bold red-box 피곤한가요">피곤한가요?</p>
+		<img align="right" class="sm-size img01" src="img01.png">
+	</div>
+</section>
+
+<section class="bg-black">
+	<div class="no-padding">
+		<p class="red-box 하지만">하지만 주어진 하루는 단 24시간...</p>
+	<div class="no-padding text-deco top-a">
+			<img class="adjust" src="text-white.png">
+			<img src="reaction-bg.jpg">
+			<img class="adjust" src="text-white.png">
+	</div>
+</section>
+
+<section>
+	<div class="no-padding top-a">
+		<div class="white mid-em">
+			<p>이러한 상황이 지속적으로 해결이 안된다면...</p>
+		</div>
+		<div class="img-flex white">
+		<div class="txt">
+			<img src="jipjung.jpg">
+			<p>집중력 저하</p>
+		</div>
+		<div class="txt">
+			<img src="dizzy.jpg">
+			<p>어지러움증</p>
+		</div>
+		<div class="txt">
+			<img src="skinprb.jpg">
+			<p>피부트러블</p>
+		</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="bg-exper" id="findings">
+	<div class="wrapper3 white">
+		<p>이런 문제를 발견하고 저희 졸려요 연구소에선</p>
+		<h3>10년의 연구 끝으로 개발했습니다.</h3>
+	</div>
+	</div>
+</section>
+
+
+<section class="container">
+	<h2>
+	  <span class="white">10분만 자도</span>
+  <div class="message">
+    <div class="word1">1시간 숙면효과</div>
+    <div class="word2">3시간 숙면효과</div>
+    <div class="word3">6시간 숙면효과</div>
+  </div>
+</h2>
+</section>
+
+
+<section>
+	<div class="bg-hand">
+	<div class="wrapper3 img-flex white">
+	<div class="column-3"> 
+		<span class="dot"></span>
+		<h4>인증</h4>
+		<p>HACCP 인증 <br>미국 FDA 인증</p>
+	</div>
+
+	<div class="column-3">
+		<span class="dot"></span>
+		<h4>無첨가</h4>
+		<p>무설탕, 글루틴프리,<br>무지방, 락토프리 
+		</p>
+	</div>
+
+	<div class="column-3">
+		<span class="dot"></span>
+		<h4>기능성 안전</h4>
+		<p>숙면개선, 기억력개선, <br>피로개선, 체지방 감소 
+		</p>
+	</div>
+<div>
+</section>
+
+<section>
+	<div>
+		<div class="img-flex">
+			<div class="first-col pink-box">
+				<img src="melatonin.png" class="melatonin">
+				<p class="text-pink">멜라토닌</p>
+			</div>
+			<div class="second-col green-box">
+				<img src="menthol.png" class="menthol">
+				<p class="text-green">페퍼민트의 멘톨</p>
+			</div>
+			<div class="last-col">
+				<p class="text-purple">페퍼민트의 멘톨과 멜라토닌 합성 성공</p>
+				<h4 class="white udl-wavy"> 새로운 성분 <em>멘톨라닌</em> 첨가</h4> 
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section>
+	<div>
+		<img src="brain.png" class="brain">
+		</div>
+		<div class="white brain t-left wrapper">
+		<h4>Brain Reaction</h4>
+		<p>기존 멜라토닌에 있는 부작용을 극적으로 낮췄으며 과도하게 섭취할 경우 체내에 흡수 되지 않고 바로 배출되어 안전성을 확보하였다. <br>10년간 총 4단계의 임상실험에 거쳐 짧은 낮잠에도 몇 시간 숙면의 효과를 증명했다.</p>
+		<p>Shin. 2023. ‘Mentholanin: synthesis and their effect on sleep deprivation’. Jolryeoyo Research, 18(1).</p>
+	</div>
+</section>
+
+<section>
+	<div class="product">
+		<div class="white mid-em" id="product">
+			<h3>지금 바로 사용해보세요!</h3>
+		</div>
+		<div class="img-flex black">
+			
+			<div>
+				<div class="txt purple-filled buy">
+					<p> <em>1</em> 시간</p>
+				<img src="sleepy1.png" class="sleepy1">
+			</div>
+			<div class="button text-purple purple-box">
+				<p>구매하기</p>
+			</div>
+		</div>
+
+<div>
+		<div class="txt green-filled buy">
+			<p> <em>3</em> 시간</p>
+			<img src="sleepy3.png" class="sleepy3">
+		</div>
+		<div  class="button text-green green-box">
+			<p>구매하기</p>
+		</div>
+	</div>
+
+<div>
+		<div class="txt pink-filled buy">
+					<p> <em>6</em> 시간</p>
+			<img src="sleepy6.png" class="sleepy6">
+		</div>
+		<div class="button text-pink pink-box">
+			<p>구매하기</p>
+		</div>
+		</div>
+		</div>
+
+<section>
+	<div class="red-box wrapper cautions" id="cautions">
+	<h4>Caution</h4>
+		<p>섭취한 시간의 절반을 잠으로 다시 채워야 <br>다음 섭취 시 동일한 효과를 볼 수 있다.
+<br>(외상 가능)</p>
+	</div>
+</section>
+
+
+<footer>
+	No rights reserved as this is just a school project.</footer>
+
+
+</body>
+</html>
